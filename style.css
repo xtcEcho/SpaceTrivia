@@ -1,0 +1,178 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+body * {
+  font-family: 'Source Code Pro', monospace;
+  
+}
+
+h1, h2, h3, label{
+  color:white;
+}
+
+
+.rotate{
+  
+  position:fixed; 
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  
+  height:300%;
+  filter:brightness(65%);
+  
+  /* transform-origin: center; */
+  /* display:block;
+  margin-left: auto;
+  margin-right: auto; */
+  /* position:fixed; */
+  /* top:50%;
+  left:50%;  */
+  /* transform: translate(-50%, -50%); */
+  /* width:200%; */
+  /* text-align: center; */
+  /* width:200%; */
+  /* transform: translate(-150%, -150%); */
+
+  /* animation: rotation 60s infinite linear; */
+  
+}
+
+
+/* @keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+} */
+
+.container{
+  width:85%;
+  max-width:500px;
+  height:550px;
+  /* background-color:rgb(255, 255, 255, 0.5); */
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  /* //border: 2px solid white;
+  //border-radius: 5px; */
+  padding-top:50px;
+  
+}
+h1{
+  margin-bottom:0;
+  font-weight: 900; 
+  
+}
+.questionCount{
+  margin:10px;
+  width:300px;
+  height:80px;
+  
+  padding-top:10px;
+}
+
+.count_hidden{
+  display:none;
+}
+
+h2{
+  margin:0;
+  padding:10px;
+}
+
+h3{
+  margin:0;
+  padding:2px;
+  
+}
+
+form{
+  width:80%;
+  max-width:300px;
+  height:300px;
+  
+}
+
+label{
+  font-size:18px;
+}
+.label{
+  margin-bottom:10px;
+}
+button{
+  font-size: 18px;
+  height:35px;
+  background-color: Transparent;
+  border:2px white solid;
+  color:white;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover{
+  background-color: rgba(251, 251, 252, 0.8);
+  color:black;
+  box-shadow: -5px -3px rgba(251, 251, 252, 0.5);
+  transform: translateY(4px);
+}
+
+button:active{
+  background-color: rgba(251, 251, 252, 1);
+  /* transform: translateY(4px); */
+}
+
+.answer{
+  width:85%;
+  
+  margin-top:10px;
+}
+
+button.wrong-answer:disabled{
+  background-color: transparent;
+  color:white;
+  box-shadow: none;
+  opacity:0.5;
+}
+
+button.right-answer:disabled{
+  background-color: aquamarine;
+  border: aquamarine;
+  color: black;
+  box-shadow: none; 
+  
+}
+
+
+
+button.selected-wrong-answer:disabled{
+  
+  background-color: rgba(251, 251, 252, 0.8);
+  color:black;
+  
+}
+
+.my-score, .next, .launch, .relaunch{
+  width: 140px;
+
+}
+.launch{
+  margin-top:200px;
+}
+
+.relaunch{
+  margin-top:100px;
+}
+
+.center{
+  margin-left:auto;
+  margin-right: auto;
+}
+.center-text{
+  text-align: center;
+}
